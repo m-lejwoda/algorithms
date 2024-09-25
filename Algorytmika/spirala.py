@@ -27,6 +27,7 @@ def clickedCzysc():
 przyciskCzysc = Button(okno, text=" Czyść ", command=clickedCzysc)
 przyciskCzysc.grid(column=1, row=0, padx=5, pady=5)
 
+"""Param alpha odestep pmoiedzy liniami rownoleglymi lg - dlugosc boku rysowanego w pierewszej kolejnosci"""
 def rysuj_spirala(paramAlpha, paramLg, x,y):
     if (paramLg > 0 and paramLg > paramAlpha):
         plotno.create_line(x, y, x + paramLg, y)

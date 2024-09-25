@@ -4,24 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0550bbfb-9eae-4b91-b848-e40da2bba43b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/algorithms.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/McCarthy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bfs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bfs_dfs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dijkstra_algorithm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iterative dfs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recursive_dfs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/silnia.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/silnia2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spirala.py" afterDir="false" />
+    <list default="true" id="0550bbfb-9eae-4b91-b848-e40da2bba43b" name="Changes" comment="add all">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorytmika/spirala.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorytmika/spirala.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +52,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Algorytmika" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -84,12 +74,25 @@
       <option name="presentableId" value="Default" />
       <updated>1727193544949</updated>
       <workItem from="1727193546321" duration="8343000" />
-      <workItem from="1727284124000" duration="4843000" />
+      <workItem from="1727284124000" duration="6408000" />
     </task>
+    <task id="LOCAL-00001" summary="add all">
+      <option name="closed" value="true" />
+      <created>1727289386939</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1727289386939</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add all" />
+    <option name="LAST_COMMIT_MESSAGE" value="add all" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -180,7 +183,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/algorithms$n.coverage" NAME="n Coverage Results" MODIFIED="1727286062886" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/algorithms$silnia.coverage" NAME="silnia Coverage Results" MODIFIED="1727286703491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/algorithms$spirala.coverage" NAME="spirala Coverage Results" MODIFIED="1727288931686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/algorithms$spirala.coverage" NAME="spirala Coverage Results" MODIFIED="1727290334326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorytmika" />
     <SUITE FILE_PATH="coverage/algorithms$silnia2.coverage" NAME="silnia2 Coverage Results" MODIFIED="1727287124572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/algorithms$McCarthy.coverage" NAME="McCarthy Coverage Results" MODIFIED="1727285671067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/algorithms$dfs.coverage" NAME="dfs Coverage Results" MODIFIED="1727197904481" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
