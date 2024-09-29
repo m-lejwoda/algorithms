@@ -45,10 +45,6 @@ def decorative_fence(number, length, x,y):
     decorative_fence(number - 1, oval_length, x +  oval_length, y)
     decorative_fence(number - 1,  oval_length, x, y +  oval_length)
     decorative_fence(number - 1,  oval_length, x + oval_length, y +  oval_length)
-    # second_length = length /2
-    #
-    # decorative_fence(number-1,oval_r,x + f3 ,y+ f3)
-
     plotno.grid(column=2, row=2, padx=1, pady=1)
 
 def clickedDraw():
