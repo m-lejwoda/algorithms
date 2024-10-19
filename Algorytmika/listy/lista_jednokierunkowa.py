@@ -1,14 +1,28 @@
-#184
+# 192
 class Element:
     def __init__(self, pDane=None, pNastepny=None):
         self.dane = pDane
         self.nastepny = pNastepny
+
 
 class Lista:
     def __init__(self):
         self.glowa = None
         self.ogon = None
         self.dlugosc = 0
+
+    def __add__(self, x2):
+
+        suma = Lista()
+        q1 = self.glowa
+        q2 = x2.glowa
+        while q1 != None:
+            suma.wstaw_sort(q1.dane)
+            q1 = q1.nastepny
+        while q2 != None:
+            suma.wstaw_sort(q2.dane)
+            q2 = q2.nastepny
+        return suma
 
     def wstaw_sort(self, number: int):
         element = Element(number)
@@ -66,6 +80,7 @@ class Lista:
             tmp = tmp.nastepny
             index += 1
         print("W liscie nie ma takiego elementu")
+
     def zwroc_liste_elementow_bez_dlugosc(self):
         index = 0
         tmp = self.glowa
@@ -90,6 +105,7 @@ class Lista:
                 return tmp.dane
             tmp = tmp.nastepny
             index += 1
+
     def usun_k_ty_element(self, k):
         index = 0
         tmp = self.glowa
@@ -99,27 +115,29 @@ class Lista:
             return
         while tmp is not None:
             if index == k:
-                #pierwszy element
+                # pierwszy element
                 if self.glowa == tmp:
                     if tmp.nastepny is not None:
                         self.glowa = tmp.nastepny
                     else:
                         self.glowa = None
                     return
-                #Koncowy element
+                # Koncowy element
                 if self.ogon == tmp:
                     self.ogon = pop
                     pop.nastepny = None
                     return
-                #srodkowy element
+                # srodkowy element
                 pop.nastepny = tmp.nastepny
                 return tmp.dane
             pop = tmp
             tmp = tmp.nastepny
             index += 1
+
     def usun_pierwszy(self):
         self.glowa = self.glowa.nastepny
         self.dlugosc -= 1
+
     def usun_ze_srodka(self, k):
         if k >= self.dlugosc:
             return None
@@ -144,6 +162,7 @@ class Lista:
             tmp = tmp.nastepny
             index += 1
 
+
 l = Lista()
 l.wstaw_na_koniec(5)
 l.wstaw_na_koniec(6)
@@ -164,27 +183,24 @@ lista_sort.wstaw_sort(6)
 lista_sort.wstaw_sort(18)
 lista_sort.wstaw_sort(9)
 lista_sort.wstaw_sort(1)
-# lista_sort.usun_pierwszy()
-lista_sort.usun_ze_srodka(2)
-lista_sort.usun_ze_srodka(0)
-lista_sort.usun_ze_srodka(3)
-lista_sort.usun_ze_srodka(14)
-print("wypisz")
-lista_sort.wypisz()
+lista_sort2 = Lista()
 
-# l = Lista()
-# q = Element(3)
-# l.glowa = q
-# l.ogon = q
-# r = Element(5)
-# q.nastepny = r
-# l.ogon = r
-# x=5
-# adres_tmp=l.glowa
-# while adres_tmp!= None:
-#     if adres_tmp.dane==x:
-#         print("Znalazłem poszukiwany element")
-#         break
-#     adres_tmp=adres_tmp.nastepny
-#     if adres_tmp == None:
-#         print("Nie znaleziono poszukiwanego elementu")
+# lista_sort.usun_pierwszy()
+# lista_sort.usun_ze_srodka(2)
+# lista_sort.usun_ze_srodka(0)
+# lista_sort.usun_ze_srodka(3)
+# lista_sort.usun_ze_srodka(14)
+print("wypisz")
+
+lista_sort.wypisz()
+lista_sort2.wstaw_sort(5)
+lista_sort2.wstaw_sort(6)
+lista_sort2.wstaw_sort(1)
+lista_sort2.wstaw_sort(2)
+print("lista_sort")
+lista_sort.wypisz()
+print("lista_sort2")
+lista_sort2.wypisz()
+suma = Lista()
+suma = lista_sort + lista_sort2
+suma.wypisz()
