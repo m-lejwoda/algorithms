@@ -1,3 +1,4 @@
+#183
 class Element:
     def __init__(self, pDane=None, pNastepny=None):
         self.dane = pDane
