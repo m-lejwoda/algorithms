@@ -37,13 +37,67 @@ class Lista:
             tmp = tmp.nastepny
             index += 1
         print("W liscie nie ma takiego elementu")
+    def zwroc_liste_elementow_bez_dlugosc(self):
+        index = 0
+        tmp = self.glowa
+        if self.glowa is None:
+            print(index)
+            return
+        while tmp is not None:
+            tmp = tmp.nastepny
+            index += 1
+        print(index)
+        return index
 
+    def zwroc_k_ty_element(self, k):
+        index = 0
+        tmp = self.glowa
+        if k >= self.dlugosc:
+            print("Nie ma tyle elementów")
+            return
+        while tmp is not None:
+            if index == k:
+                print("na indexie {} znajduje sie liczba {}".format(k, tmp.dane))
+                return tmp.dane
+            tmp = tmp.nastepny
+            index += 1
+    def usun_k_ty_element(self, k):
+        index = 0
+        tmp = self.glowa
+        pop = None
+        if k >= self.dlugosc:
+            print("Nie ma tyle elementów")
+            return
+        while tmp is not None:
+            if index == k:
+                #pierwszy element
+                if self.glowa == tmp:
+                    if tmp.nastepny is not None:
+                        self.glowa = tmp.nastepny
+                    else:
+                        self.glowa = None
+                    return
+                #Koncowy element
+                if self.ogon == tmp:
+                    self.ogon = pop
+                    pop.nastepny = None
+                    return
+                #srodkowy element
+                pop.nastepny = tmp.nastepny
+                return tmp.dane
+            pop = tmp
+            tmp = tmp.nastepny
+            index += 1
 l = Lista()
 l.wstaw_na_koniec(5)
 l.wstaw_na_koniec(6)
 l.wstaw_na_koniec(7)
 l.wypisz()
 l.szukaj(8)
+l.zwroc_liste_elementow_bez_dlugosc()
+l.zwroc_k_ty_element(0)
+l.usun_k_ty_element(2)
+l.wypisz()
 # l = Lista()
 # q = Element(3)
 # l.glowa = q
