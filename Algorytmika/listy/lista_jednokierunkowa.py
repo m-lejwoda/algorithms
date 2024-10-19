@@ -1,4 +1,4 @@
-#183
+#184
 class Element:
     def __init__(self, pDane=None, pNastepny=None):
         self.dane = pDane
@@ -117,6 +117,33 @@ class Lista:
             pop = tmp
             tmp = tmp.nastepny
             index += 1
+    def usun_pierwszy(self):
+        self.glowa = self.glowa.nastepny
+        self.dlugosc -= 1
+    def usun_ze_srodka(self, k):
+        if k >= self.dlugosc:
+            return None
+        tmp = self.glowa
+        pop = self.glowa
+        index = 0
+        while tmp is not None:
+            if k == 0:
+                if self.glowa is not None:
+                    if self.glowa.nastepny is not None:
+                        self.glowa = self.glowa.nastepny
+                    else:
+                        self.glowa = None
+                return
+            if index == k:
+                if tmp.nastepny is not None:
+                    pop.nastepny = tmp.nastepny
+                else:
+                    pop.nastepny = None
+                return
+            pop = tmp
+            tmp = tmp.nastepny
+            index += 1
+
 l = Lista()
 l.wstaw_na_koniec(5)
 l.wstaw_na_koniec(6)
@@ -137,6 +164,11 @@ lista_sort.wstaw_sort(6)
 lista_sort.wstaw_sort(18)
 lista_sort.wstaw_sort(9)
 lista_sort.wstaw_sort(1)
+# lista_sort.usun_pierwszy()
+lista_sort.usun_ze_srodka(2)
+lista_sort.usun_ze_srodka(0)
+lista_sort.usun_ze_srodka(3)
+lista_sort.usun_ze_srodka(14)
 print("wypisz")
 lista_sort.wypisz()
 
