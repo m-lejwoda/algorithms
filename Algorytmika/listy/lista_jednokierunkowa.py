@@ -9,6 +9,34 @@ class Lista:
         self.glowa = None
         self.ogon = None
         self.dlugosc = 0
+
+    def wstaw_sort(self, number: int):
+        element = Element(number)
+        if self.dlugosc == 0:
+            self.glowa = element
+            self.ogon = element
+            self.dlugosc += 1
+            return
+        tmp = self.glowa
+        pop = self.glowa
+        index = 0
+        while tmp is not None:
+            if element.dane <= tmp.dane:
+                if index == 0:
+                    self.glowa = element
+                    pop = element
+                    pop.nastepny = tmp
+                else:
+                    pop.nastepny = element
+                    element.nastepny = tmp
+
+                return
+            index += 1
+            pop = tmp
+            tmp = tmp.nastepny
+        self.ogon.nastepny = element
+        self.dlugosc += 1
+
     def wstaw_na_koniec(self, number: int):
         e = Element(number)
         if self.glowa is None:
@@ -99,6 +127,19 @@ l.zwroc_liste_elementow_bez_dlugosc()
 l.zwroc_k_ty_element(0)
 l.usun_k_ty_element(2)
 l.wypisz()
+lista_sort = Lista()
+lista_sort.wstaw_sort(5)
+lista_sort.wstaw_sort(7)
+lista_sort.wstaw_sort(4)
+lista_sort.wstaw_sort(3)
+lista_sort.wstaw_sort(10)
+lista_sort.wstaw_sort(6)
+lista_sort.wstaw_sort(18)
+lista_sort.wstaw_sort(9)
+lista_sort.wstaw_sort(1)
+print("wypisz")
+lista_sort.wypisz()
+
 # l = Lista()
 # q = Element(3)
 # l.glowa = q
