@@ -1,3 +1,4 @@
+#203
 class Fiszka:
 
     def __init__(self, pNazwisko="", pWiek=0):
