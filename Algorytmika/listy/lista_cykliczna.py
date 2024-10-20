@@ -1,3 +1,4 @@
+#210
 class Element:
     def __init__(self, pNazwisko):
         self.poprzedni = None
