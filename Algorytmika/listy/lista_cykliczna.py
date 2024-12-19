@@ -5,7 +5,6 @@ class Element:
         self.nastepny = None
         self.nazwisko = pNazwisko
 
-
 class ListaCykliczna:
     def __init__(self):
         self.poczatek = None
