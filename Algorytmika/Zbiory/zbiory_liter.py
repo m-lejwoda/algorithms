@@ -16,6 +16,24 @@ class ZbiorLitery:
             suma.zbior[i] = self.zbior[i] or x2.zbior[i]
         return suma
 
+    def __sub__(self, x2):
+        print("sub")
+        sub = ZbiorLitery()
+        for i in range(26):
+            if x2.zbior[i] == True:
+                sub.zbior[i] = False
+                continue
+            if self.zbior[i] == True:
+                sub.zbior[i] = True
+        return sub
+
+    def __mul__(self, x2):
+        print("mul")
+        mul = ZbiorLitery()
+        for i in range(26):
+            mul.zbior[i] = self.zbior[i] and x2.zbior[i]
+        return mul
+
     def usun(self, c):
         i = do_indeksu(c)
         print("Usuwam", c.upper())
@@ -50,7 +68,10 @@ z2.dodaj('K')
 z2.dodaj('R')
 z1.wypisz("z1")
 z2.wypisz("z2")
-z1.usun('a')
-z1.usun('X')
-z1.wypisz("z1")
+(z1-z2).wypisz("z1-z2")
+(z1*z2).wypisz("z1*z2")
 (z1+z2).wypisz("z1+z2")
+
+# z1.usun('a')
+# z1.usun('X')
+# z1.wypisz("z1")
