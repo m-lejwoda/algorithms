@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0550bbfb-9eae-4b91-b848-e40da2bba43b" name="Changes" comment="strona">
+    <list default="true" id="0550bbfb-9eae-4b91-b848-e40da2bba43b" name="Changes" comment="sub and mul">
+      <change afterPath="$PROJECT_DIR$/Algorytmika/Struktury Danych/stos.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algorytmika/Zbiory/zbiory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algorytmika/numpy/numpy0.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +25,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;m-lejwoda&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:m-lejwoda/algorithms.git&quot;,
+    &quot;accountId&quot;: &quot;b3ac248b-ec1e-463c-af9f-9656a717b0b7&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -46,6 +61,7 @@
     "Python.lista_dwukierunkowa.executor": "Run",
     "Python.lista_jednokierunkowa.executor": "Run",
     "Python.n.executor": "Run",
+    "Python.numpy0.executor": "Run",
     "Python.przeszukiwanie_binarne.executor": "Run",
     "Python.silnia.executor": "Run",
     "Python.silnia2.executor": "Run",
@@ -59,8 +75,11 @@
     "Python.zadanie 4.executor": "Run",
     "Python.zadanie 5.executor": "Run",
     "Python.zadanie3.executor": "Run",
+    "Python.zbiory.executor": "Run",
+    "Python.zbiory_liter.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -77,8 +96,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.23339.19" />
-        <option value="bundled-python-sdk-0029f7779945-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.23339.19" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-PY-243.22562.180" />
+        <option value="bundled-python-sdk-85c76a3b01b3-9a18a617cbe4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.22562.180" />
       </set>
     </attachedChunks>
   </component>
@@ -107,6 +126,8 @@
       <workItem from="1729402567518" duration="5694000" />
       <workItem from="1729414615986" duration="4085000" />
       <workItem from="1729443472015" duration="4992000" />
+      <workItem from="1734633654325" duration="4840000" />
+      <workItem from="1734893701045" duration="2955000" />
     </task>
     <task id="LOCAL-00001" summary="add all">
       <option name="closed" value="true" />
@@ -308,11 +329,62 @@
       <option name="project" value="LOCAL" />
       <updated>1729449261342</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="strona">
+      <option name="closed" value="true" />
+      <created>1734633669136</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1734633669136</updated>
+    </task>
+    <task id="LOCAL-00027" summary="strona">
+      <option name="closed" value="true" />
+      <created>1734633696530</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1734633696530</updated>
+    </task>
+    <task id="LOCAL-00028" summary="strona">
+      <option name="closed" value="true" />
+      <created>1734633859640</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1734633859640</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Zbiory liter">
+      <option name="closed" value="true" />
+      <created>1734636515259</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1734636515259</updated>
+    </task>
+    <task id="LOCAL-00030" summary="sub and mul">
+      <option name="closed" value="true" />
+      <created>1734639053168</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1734639053168</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add all" />
@@ -337,7 +409,9 @@
     <MESSAGE value="usuwanie" />
     <MESSAGE value="Lista cykliczna" />
     <MESSAGE value="strona" />
-    <option name="LAST_COMMIT_MESSAGE" value="strona" />
+    <MESSAGE value="Zbiory liter" />
+    <MESSAGE value="sub and mul" />
+    <option name="LAST_COMMIT_MESSAGE" value="sub and mul" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -456,31 +530,34 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/algorithms$n.coverage" NAME="n Coverage Results" MODIFIED="1727286062886" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/algorithms$spirala.coverage" NAME="spirala Coverage Results" MODIFIED="1727290334326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorytmika" />
-    <SUITE FILE_PATH="coverage/algorithms$silnia2.coverage" NAME="silnia2 Coverage Results" MODIFIED="1727287124572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/algorithms$sum_lists.coverage" NAME="sum_lists Coverage Results" MODIFIED="1727381454668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorytmika/rekurencja zadania" />
-    <SUITE FILE_PATH="coverage/algorithms$kwadraty_parzyste.coverage" NAME="kwadraty parzyste Coverage Results" MODIFIED="1727525966346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorytmika/rekurencja zadania" />
-    <SUITE FILE_PATH="coverage/algorithms$Kartoteka.coverage" NAME="Kartoteka Coverage Results" MODIFIED="1729374028671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorytmika/listy/listyIndeksujace" />
-    <SUITE FILE_PATH="coverage/algorithms$silnia.coverage" NAME="silnia Coverage Results" MODIFIED="1727366329774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorytmika" />
-    <SUITE FILE_PATH="coverage/algorithms$fiszka.coverage" NAME="fiszka Coverage Results" MODIFIED="1729418606994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorytmika/listy/tablicecpp" />
-    <SUITE FILE_PATH="coverage/algorithms$zadanie_2_z_parametrem.coverage" NAME="zadanie 2 z parametrem Coverage Results" MODIFIED="1727365949816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorytmika/rekurencja zadania" />
-    <SUITE FILE_PATH="coverage/algorithms$BazaDanychMain.coverage" NAME="BazaDanychMain Coverage Results" MODIFIED="1729408497513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorytmika/listy/listyIndeksujace" />
-    <SUITE FILE_PATH="coverage/algorithms$bfs.coverage" NAME="bfs Coverage Results" MODIFIED="1727199545312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/algorithms$zadanie_2.coverage" NAME="zadanie 2 Coverage Results" MODIFIED="1727365835782" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorytmika/rekurencja zadania" />
-    <SUITE FILE_PATH="coverage/algorithms$zadanie_5.coverage" NAME="zadanie 5 Coverage Results" MODIFIED="1727366449279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorytmika/rekurencja zadania" />
-    <SUITE FILE_PATH="coverage/algorithms$McCarthy.coverage" NAME="McCarthy Coverage Results" MODIFIED="1727285671067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/algorithms$iterative_dfs.coverage" NAME="iterative dfs Coverage Results" MODIFIED="1727200491627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/algorithms$lista_jednokierunkowa.coverage" NAME="lista_jednokierunkowa Coverage Results" MODIFIED="1729359841589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorytmika/listy" />
-    <SUITE FILE_PATH="coverage/algorithms$zadanie3.coverage" NAME="zadanie3 Coverage Results" MODIFIED="1727544722296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorytmika/rekurencja zadania" />
-    <SUITE FILE_PATH="coverage/algorithms$suma_liczb.coverage" NAME="suma_liczb Coverage Results" MODIFIED="1727372542723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorytmika/rekurencja zadania" />
-    <SUITE FILE_PATH="coverage/algorithms$BazaDanych.coverage" NAME="BazaDanych Coverage Results" MODIFIED="1729408494027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorytmika/listy/listyIndeksujace" />
-    <SUITE FILE_PATH="coverage/algorithms$przeszukiwanie_binarne.coverage" NAME="przeszukiwanie_binarne Coverage Results" MODIFIED="1727370981671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorytmika/rekurencja zadania" />
-    <SUITE FILE_PATH="coverage/algorithms$lista_cykliczna.coverage" NAME="lista_cykliczna Coverage Results" MODIFIED="1729449155422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorytmika/listy" />
-    <SUITE FILE_PATH="coverage/algorithms$dfs.coverage" NAME="dfs Coverage Results" MODIFIED="1727197904481" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/algorithms$zadanie_1.coverage" NAME="zadanie 1 Coverage Results" MODIFIED="1727362425736" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorytmika/rekurencja zadania" />
-    <SUITE FILE_PATH="coverage/algorithms$sum_lists_v2.coverage" NAME="sum_lists_v2 Coverage Results" MODIFIED="1727405235101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorytmika/rekurencja zadania" />
-    <SUITE FILE_PATH="coverage/algorithms$zadanie_4.coverage" NAME="zadanie 4 Coverage Results" MODIFIED="1727368075351" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorytmika/rekurencja zadania" />
     <SUITE FILE_PATH="coverage/algorithms$lista_dwukierunkowa.coverage" NAME="lista_dwukierunkowa Coverage Results" MODIFIED="1729447800669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorytmika/listy" />
+    <SUITE FILE_PATH="coverage/algorithms$fiszka.coverage" NAME="fiszka Coverage Results" MODIFIED="1729418606994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorytmika/listy/tablicecpp" />
+    <SUITE FILE_PATH="coverage/algorithms$silnia2.coverage" NAME="silnia2 Coverage Results" MODIFIED="1727287124572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/algorithms$BazaDanych.coverage" NAME="BazaDanych Coverage Results" MODIFIED="1729408494027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorytmika/listy/listyIndeksujace" />
+    <SUITE FILE_PATH="coverage/algorithms$zadanie_2_z_parametrem.coverage" NAME="zadanie 2 z parametrem Coverage Results" MODIFIED="1727365949816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorytmika/rekurencja zadania" />
+    <SUITE FILE_PATH="coverage/algorithms$suma_liczb.coverage" NAME="suma_liczb Coverage Results" MODIFIED="1727372542723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorytmika/rekurencja zadania" />
+    <SUITE FILE_PATH="coverage/algorithms$numpy0.coverage" NAME="numpy0 Coverage Results" MODIFIED="1734895821859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorytmika/numpy" />
+    <SUITE FILE_PATH="coverage/algorithms$kwadraty_parzyste.coverage" NAME="kwadraty parzyste Coverage Results" MODIFIED="1727525966346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorytmika/rekurencja zadania" />
+    <SUITE FILE_PATH="coverage/algorithms$iterative_dfs.coverage" NAME="iterative dfs Coverage Results" MODIFIED="1727200491627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/algorithms$lista_cykliczna.coverage" NAME="lista_cykliczna Coverage Results" MODIFIED="1729449155422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorytmika/listy" />
+    <SUITE FILE_PATH="coverage/algorithms$zadanie_5.coverage" NAME="zadanie 5 Coverage Results" MODIFIED="1727366449279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorytmika/rekurencja zadania" />
+    <SUITE FILE_PATH="coverage/algorithms$bfs.coverage" NAME="bfs Coverage Results" MODIFIED="1727199545312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/algorithms$zbiory.coverage" NAME="zbiory Coverage Results" MODIFIED="1734895193101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorytmika/Zbiory" />
+    <SUITE FILE_PATH="coverage/algorithms$zbiory_liter.coverage" NAME="zbiory_liter Coverage Results" MODIFIED="1734639022873" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorytmika/Zbiory" />
+    <SUITE FILE_PATH="coverage/algorithms$zadanie_2.coverage" NAME="zadanie 2 Coverage Results" MODIFIED="1727365835782" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorytmika/rekurencja zadania" />
+    <SUITE FILE_PATH="coverage/algorithms$silnia.coverage" NAME="silnia Coverage Results" MODIFIED="1727366329774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorytmika" />
+    <SUITE FILE_PATH="coverage/algorithms$McCarthy.coverage" NAME="McCarthy Coverage Results" MODIFIED="1727285671067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/algorithms$n.coverage" NAME="n Coverage Results" MODIFIED="1727286062886" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/algorithms$lista_jednokierunkowa.coverage" NAME="lista_jednokierunkowa Coverage Results" MODIFIED="1729359841589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorytmika/listy" />
+    <SUITE FILE_PATH="coverage/algorithms$Kartoteka.coverage" NAME="Kartoteka Coverage Results" MODIFIED="1729374028671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorytmika/listy/listyIndeksujace" />
+    <SUITE FILE_PATH="coverage/algorithms$zadanie3.coverage" NAME="zadanie3 Coverage Results" MODIFIED="1727544722296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorytmika/rekurencja zadania" />
+    <SUITE FILE_PATH="coverage/algorithms$spirala.coverage" NAME="spirala Coverage Results" MODIFIED="1727290334326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorytmika" />
+    <SUITE FILE_PATH="coverage/algorithms$zadanie_4.coverage" NAME="zadanie 4 Coverage Results" MODIFIED="1727368075351" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorytmika/rekurencja zadania" />
+    <SUITE FILE_PATH="coverage/algorithms$przeszukiwanie_binarne.coverage" NAME="przeszukiwanie_binarne Coverage Results" MODIFIED="1727370981671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorytmika/rekurencja zadania" />
+    <SUITE FILE_PATH="coverage/algorithms$dfs.coverage" NAME="dfs Coverage Results" MODIFIED="1727197904481" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/algorithms$sum_lists_v2.coverage" NAME="sum_lists_v2 Coverage Results" MODIFIED="1727405235101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorytmika/rekurencja zadania" />
+    <SUITE FILE_PATH="coverage/algorithms$BazaDanychMain.coverage" NAME="BazaDanychMain Coverage Results" MODIFIED="1729408497513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorytmika/listy/listyIndeksujace" />
+    <SUITE FILE_PATH="coverage/algorithms$zadanie_1.coverage" NAME="zadanie 1 Coverage Results" MODIFIED="1727362425736" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Algorytmika/rekurencja zadania" />
   </component>
 </project>
