@@ -1,112 +1,116 @@
+# Przykłady użycia klasy BST
+# --- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 class Wezel:
     def __init__(self, pKlucz=None):
-        self.klucz = pKlucz
-        self.lewy = None
-        self.prawy = None
+        self.klucz = pKlucz  # Tutaj zapamiętamy klucz
+        # tutaj może dołożyć inne atrybuty (dane biznesowe)
+        self.lewy = None  # Lewy potomek
+        self.prawy = None  # Prawy potomek
+# --- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+class BST:               # Binarne drzewo poszukiwań – klasa może być dalej rozwijana
+    def __init__(self):  # przy ukryciu detali realizacji klasy i służąc jako interfejs dostępowy do węzłów danych
+        # tu ew. inne meta-atrybuty
+        self.korzen = None  # Korzeń główny drzewa BST
 
-def MinWezel(start):
-    tmp = start
-    while (tmp.lewy != None): # Idziemy skrajnie na lewo!
-        tmp = tmp.lewy
-    return tmp
-
-def usunWezel(wierzcholek, klucz):
-    # Startujemy od węzła „wierzcholek”
-    if wierzcholek == None:
-        return wierzcholek
-    if klucz < wierzcholek.klucz:
-        # Idziemy na lewo
-        wierzcholek.lewy = usunWezel(wierzcholek.lewy, klucz)
-    elif (klucz > wierzcholek.klucz):
-        # Idziemy na prawo
-        wierzcholek.prawy = usunWezel(wierzcholek.prawy, klucz)
-    else: # Usuwamy znaleziony wierzchołek
-        if wierzcholek.lewy==None:
-            # Wierzchołek z tylko jednym potomkiem
-            temp = wierzcholek.prawy
-            return temp
-        elif wierzcholek.prawy==None:
-            temp = wierzcholek.lewy
-            return temp
-        # Wierzchołek z dwoma potomkami => szukamy następcy kasowanego węzła,
-        # który znajduje się w prawej gałęzi:
-        temp = MinWezel(wierzcholek.prawy)
-        # Kopiujemy zawartość następnika w miejsce usuwanego węzła (klucz i ew. inne atrybuty):
-        wierzcholek.klucz = temp.klucz
-        wierzcholek.prawy=usunWezel(wierzcholek.prawy,temp.klucz)# Usuwamy następnik
-        # z podgałęzi
-    return wierzcholek
-
-class BST:
-    def __init__(self):
-        self.korzen = None
-
-    def szukaj(self, x):
-        # Zwraca węzeł o kluczu 'x' lub None
-        if self.korzen == None:
-            return None
-        tmp = self.korzen
-        while tmp.klucz != x:
-            if x < tmp.klucz: # Kieruj się na lewo
-                tmp = tmp.lewy
-            else:
-                tmp = tmp.prawy
-            if tmp == None: # Brak potomka
-                return None
-        return tmp
-
-    def wstaw(self, k):
-        w = Wezel(k)
-        if self.korzen == None:
+    # ----------------------------------------------------------------------------
+    def wstaw(self, k):  # Wersja iteracyjna wstawiania węzła do drzewa BST
+        w = Wezel(k)  # Tworzymy nowy węzeł i szukamy miejsca ma wstawienie
+        if self.korzen == None:  # Jakoś pusto tutaj (na razie!)
             self.korzen = w
-        else:
+        else:  # Coś tam jest, zatem szukamy aż do końca świata i jeden dzień dłużej!
             tmp = self.korzen
-            while True:
+            while True:  # Z pętli wyjdziemy po wstawieniu elementu (*)
                 rodzic = tmp
-                if k < tmp.klucz:
+                if k < tmp.klucz:  # Na lewo
                     tmp = tmp.lewy
-                    if tmp == None:
+                    if tmp == None:  # Jeśli koniec ścieżki, to wstaw na lewo
                         rodzic.lewy = w
                         break
-                else:
+                else:  # Kierujemy się na prawo
                     tmp = tmp.prawy
-                    if tmp == None:
+                    if tmp == None:  # Jeśli koniec ścieżki, to wstaw na prawo
                         rodzic.prawy = w
                         break
-
-    def Min(self):
-        tmp = self.korzen
-        while tmp.lewy != None:
-            tmp = tmp.lewy
-        return tmp
-
-    def Max(self):
-        tmp = self.korzen
-        while tmp.prawy != None:
-            tmp = tmp.prawy
-        return tmp
-
-    def preOrder(self, w):
-        # Przejście „wzdłużne”
+            # Koniec pętli oznaczonej (*)
+    # ----------------------------------------------------------------------------
+    def preOrder(self, w):  # przejście "wzdłużne"
         if w != None:
             print("[", w.klucz, "]", end=" ")
             self.preOrder(w.lewy)
             self.preOrder(w.prawy)
 
-    def inOrder(self, w):
-
-        # Przejście „poprzeczne”
+    def inOrder(self, w):  # Przejście "poprzeczne"
         if w != None:
             self.inOrder(w.lewy)
             print("[", w.klucz, "]", end=" ")
             self.inOrder(w.prawy)
 
-    def postOrder(self, w):
-        # Przejście „wsteczne”
+    def postOrder(self, w):  # Przejście "wsteczne"
         if w != None:
             self.postOrder(w.lewy)
             self.postOrder(w.prawy)
             print("[", w.klucz, "]", end=" ")
+    # ----------------------------------------------------------------------------
+    def szukaj(self, x):  # Zwraca węzeł o kluczu 'x' lub None
+        if self.korzen == None:
+            return None
+        tmp = self.korzen
+        while tmp.klucz != x:
+            if x < tmp.klucz:  # Kieruj się na lewo
+                tmp = tmp.lewy
+            else:  # Kieruj się na prawo
+                tmp = tmp.prawy
+            if tmp == None:  # Brak potomka
+                return None
+        return tmp  # Znaleziono
+    # ----------------------------------------------------------------------------
+    def Min(self, start):  # Odszukaj i zwróć węzeł o najmniejszej wartości klucza
+        #tmp = self.korzen
+        tmp=start
+        while tmp.lewy != None:  # Idź w lewo, aż do końca
+            tmp = tmp.lewy
+        return tmp
+
+    def Max(self, start):  # Odszukaj i zwróć  węzeł o największej wartości klucza
+        #tmp = self.korzen
+        tmp = start
+        while tmp.prawy != None:  # Idź w prawo, aż do końca
+            tmp = tmp.prawy
+        return tmp
+
+# --- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+# Funkcje zdefiniowane poza ciałem klasy BST
+def MinWezel(start):    # Zwraca  wezeł o min. wartości klucza w drzewie (poddrzewie) 'start'
+    tmp = start
+    while (tmp.lewy != None): # Idziemy skrajnie na lewo!
+        tmp = tmp.lewy
+    return tmp
+# ----------------------------------------------------------------------------
+def usunWezel(wierzcholek, klucz):  # Startujemy od węzła 'wierzcholek'
+    if wierzcholek == None:
+        return wierzcholek
+    if klucz < wierzcholek.klucz:           # Idziemy na lewo
+        wierzcholek.lewy = usunWezel(wierzcholek.lewy, klucz)
+    elif (klucz > wierzcholek.klucz):       # Idziemy na prawo
+        wierzcholek.prawy = usunWezel(wierzcholek.prawy, klucz)
+    else:  # Usuwamy znaleziony wierzchołek
+        if wierzcholek.lewy == None:    # Wierzchołek z tylko jednym potomkiem
+            temp = wierzcholek.prawy
+            return temp
+        elif wierzcholek.prawy == None:
+            temp = wierzcholek.lewy
+            return temp
+        # Wierzchołek z dwoma potomkami
+        temp = MinWezel(wierzcholek.prawy) # Szukamy następcy kasowanego węzła, który znajduje się w prawej gałęzi
+        wierzcholek.klucz = temp.klucz     # Kopiujemy zawartość następnika w miejsce usuwanego węzła (klucz i ew. inne atrybuty)
+        wierzcholek.prawy = usunWezel(wierzcholek.prawy, temp.klucz)  # Usuwamy następnika z podgałęzi
+    return wierzcholek
+# --- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+# Próba bezpośredniego wywołania modułu
+if __name__ == "__main__":
+    print("To jest moduł biblioteczny, aby przetestować wywołaj plik:", "BSTMain.py!")
+
+
 
 drzewo = BST()
 for x in [19, 4, 25, 3, 12, 14, 8, 27, 26, 31]:
@@ -117,17 +121,20 @@ print("\n In-order")
 drzewo.inOrder(drzewo.korzen)
 print("\n Post-order")
 drzewo.postOrder(drzewo.korzen)
-# print("\nMin=", drzewo.Min(drzewo.korzen).klucz)
-# print("Max=", drzewo.Max(drzewo.korzen).klucz)
-print("\nUsuwam 12:")
-print(drzewo.korzen.klucz)
+
+print("\nMin=", drzewo.Min(drzewo.korzen).klucz)
+print("Max=", drzewo.Max(drzewo.korzen).klucz)
+
+print("Usuwam 12:")
 drzewo.korzen = usunWezel(drzewo.korzen, 12)
-print(drzewo.korzen.klucz)
-print("Nowy In-order:")
+
+print("Nowy In-order")
 drzewo.inOrder(drzewo.korzen)
+
 for x in [3, 6, 25, 27]:
     res=drzewo.szukaj(x)
     if res!=None:
         print("Znalazłem ", res.klucz)
     else:
         print("Nie znaleziono ", x)
+
